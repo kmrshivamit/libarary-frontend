@@ -1,0 +1,44 @@
+<table class="table table-striped">
+
+    <thead>
+        <tr>
+
+
+            <th>
+                Book Id
+            </th>
+
+            <th>
+                Book Name
+            </th>
+            <th>
+                Author
+            </th>
+            <th>
+                Categorie
+            </th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr *ngFor="let book of books">
+            <td> {{book.bookId}}</td>
+            <td>{{book.bookName}}</td>
+            <td>{{book.author}}</td>
+           <td>{{book.categorie.name}}</td>  
+            <td><button (click)="deleteBook(book.bookId)" class="btn btn-danger" style="margin-left: 10px">
+                    Delete</button></td>
+            <!-- <button (click) =updateEmployee(employee.id) class="btn btn-info"> Update</button>
+
+        <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px"> Employee Detatails</button>
+     -->
+
+
+
+
+        </tr>
+    </tbody>
+
+</table>

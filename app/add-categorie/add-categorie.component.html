@@ -1,0 +1,14 @@
+<h4 class="text-center"> Add new Categorie</h4>
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label > Categorie Name</label>
+        <input type="text" class="form-control" id="name"
+        [(ngModel)]="categorie.name" name="name">
+    </div>
+
+  
+    <button class="btn btn-success" type="submit" > submit</button>
+    </form>
+
+
